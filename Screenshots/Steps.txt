@@ -39,3 +39,7 @@ step 4: Add docker-compose file under the microservices folder with following co
       build: ./gateway-service
       ports:
         - "3003:3003"
+
+
+Step 5: In the terminal run below code to build and run the containers 
+        docker-compose up --build
