@@ -5,22 +5,18 @@ services:
     build: ./user-service
     ports:
       - "3000:3000"
-    restart: unless-stopped
 
   product-service:
     build: ./product-service
     ports:
       - "3001:3001"
-    restart: unless-stopped
 
   order-service:
     build: ./order-service
     ports:
-      - "3004:3004"
-    restart: unless-stopped
+      - "3002:3002"
 
   gateway-service:
     build: ./gateway-service
     ports:
       - "3003:3003"
-    restart: unless-stopped
