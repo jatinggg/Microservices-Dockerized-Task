@@ -5,59 +5,6 @@ This document provides details on testing various services after running the `do
 
 ---
 
-## Services and Endpoints
-
-### **User Service**
-- **Base URL:** `http://localhost:3000`
-- **Endpoints:**
-  - **List Users:**  
-    ```
-    curl http://localhost:3000/users
-    ```
-    Or open in your browser: [http://localhost:3000/users](http://localhost:3000/users)
-
----
-
-### **Product Service**
-- **Base URL:** `http://localhost:3001`
-- **Endpoints:**
-  - **List Products:**  
-    ```
-    curl http://localhost:3001/products
-    ```
-    Or open in your browser: [http://localhost:3001/products](http://localhost:3001/products)
-
----
-
-### **Order Service**
-- **Base URL:** `http://localhost:3002`
-- **Endpoints:**
-  - **List Orders:**  
-    ```
-    curl http://localhost:3002/orders
-    ```
-    Or open in your browser: [http://localhost:3002/orders](http://localhost:3002/orders)
-
----
-
-### **Gateway Service**
-- **Base URL:** `http://localhost:3003/api`
-- **Endpoints:**
-  - **Users:**  
-    ```
-    curl http://localhost:3003/api/users
-    ```
-  - **Products:**  
-    ```
-    curl http://localhost:3003/api/products
-    ```
-  - **Orders:**  
-    ```
-    curl http://localhost:3003/api/orders
-    ```
-
----
-
 ## Instructions
 Step 1: gitclone "https://github.com/jatinggg/Microservices-Dockerized-Task.git" 
 
@@ -128,6 +75,61 @@ Step 6: In the terminal run below code to build and run the containers
     ```  
     docker-compose up --build 
     ```
+
+
+## Services and Endpoints
+
+### **User Service**
+- **Base URL:** `http://localhost:3000`
+- **Endpoints:**
+  - **List Users:**  
+    ```
+    curl http://localhost:3000/users
+    ```
+    Or open in your browser: [http://localhost:3000/users](http://localhost:3000/users)
+
+---
+
+### **Product Service**
+- **Base URL:** `http://localhost:3001`
+- **Endpoints:**
+  - **List Products:**  
+    ```
+    curl http://localhost:3001/products
+    ```
+    Or open in your browser: [http://localhost:3001/products](http://localhost:3001/products)
+
+---
+
+### **Order Service**
+- **Base URL:** `http://localhost:3002`
+- **Endpoints:**
+  - **List Orders:**  
+    ```
+    curl http://localhost:3002/orders
+    ```
+    Or open in your browser: [http://localhost:3002/orders](http://localhost:3002/orders)
+
+---
+
+### **Gateway Service**
+- **Base URL:** `http://localhost:3003/api`
+- **Endpoints:**
+  - **Users:**  
+    ```
+    curl http://localhost:3003/api/users
+    ```
+  - **Products:**  
+    ```
+    curl http://localhost:3003/api/products
+    ```
+  - **Orders:**  
+    ```
+    curl http://localhost:3003/api/orders
+    ```
+
+---
+
 
 Step 7: Once the services are running, use the above endpoints to verify the functionality.
 
